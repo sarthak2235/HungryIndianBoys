@@ -1,0 +1,116 @@
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 800px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 200px; /* Adjust the left and right margins to control the white space */
+  padding: 100px;
+  background-color: #ffffff;
+  border: 1px dashed #dddddd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.content-inner {
+  flex: 4;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.introduction {
+  margin-bottom: 20px;
+}
+
+.restaurant-list {
+  list-style: none;
+  padding: 0;
+}
+
+.restaurant-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.restaurant-item a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.restaurant-name {
+  font-weight: bold;
+}
+
+.restaurant-review {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.restaurant-details {
+  margin-bottom: 20px;
+}
+
+.restaurant-details h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.restaurant-details p {
+  margin-top: 0;
+}
+
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.restaurant-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant-reviews {
+  margin-top: 20px;
+}
+
+.restaurant-reviews h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}

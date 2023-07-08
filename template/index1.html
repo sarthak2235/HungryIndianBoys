@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Reviews</title>
+  <link rel="stylesheet" href="/Users/sarthakmohanty/Documents/website/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hungry Indian Boys</h1>
+    
+    <div class="introduction">
+      <h2>About US</h2>
+      <p>
+        Welcome to my restaurant review website! I love exploring different restaurants and sharing my experiences. Below, you can find recent reviews about various restaurants.
+      </p>
+    </div>
+    
+    <form action="/search" method="get">
+      <input type="text" name="query" placeholder="Search for a restaurant">
+      <button type="submit">Search</button>
+    </form>
+    
+    <ul class="restaurant-list">
+      <li class="restaurant-item">
+        <a href="/restaurant/1">
+          <span class="restaurant-name">Restaurant 1</span>
+          <p class="restaurant-review">This restaurant has excellent food and great service.</p>
+        </a>
+      </li>
+      
+      <li class="restaurant-item">
+        <a href="/restaurant/2">
+          <span class="restaurant-name">Restaurant 2</span>
+          <p class="restaurant-review">The atmosphere in this restaurant is cozy, and the staff is friendly.</p>
+        </a>
+      </li>
+      <li class="restaurant-item">
+        <a href="/restaurant/3">
+          <span class="restaurant-name">Restaurant 2</span>
+          <p class="restaurant-review">The atmosphere in this restaurant is cozy, and the staff is friendly.</p>
+        </a>
+      </li>
+      
+      <!-- Add more restaurant items as needed -->
+    </ul>
+  </div>
+</body>
+</html>

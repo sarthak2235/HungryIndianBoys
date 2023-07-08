@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Reviews</title>
+  <link rel="stylesheet" href="/Users/sarthakmohanty/Documents/website/static/style.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      min-width: 800px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 50 200px; /* Adjust the left and right margins to control the white space */
+      padding: 100px;
+      background-color: #ffffff;
+      border: 1px dashed #dddddd;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333333;
+    }
+    
+    .introduction {
+      margin-bottom: 20px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+    .introduction p {
+      text-align: justify;
+      text-justify: inter-word;
+      margin: 0;
+    }
+    
+    form {
+      margin-bottom: 20px;
+    }
+    
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 70%;
+    }
+    
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .restaurant-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .restaurant-item {
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    
+    .restaurant-item a {
+      text-decoration: none;
+      color: #333333;
+    }
+    
+    .restaurant-name {
+      font-weight: bold;
+    }
+    
+    .restaurant-review {
+      margin-top: 5px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hungry Indian Boys</h1>
+    
+    <div class="introduction">
+      <h2>About Us</h2>
+      <p>
+       We are a group of two Indian-Australian boys who love food and exploring Melbourne's best restaurants. We're passionate about sharing our experiences with others, and we believe that everyone should have the opportunity to try delicious food from all over the world. We're always on the lookout for new restaurants to try, and we're always happy to give our honest opinions. We're not afraid to be critical, but we're also not afraid to sing the praises of a great restaurant. We believe that food is more than just sustenance. It's a way to connect with people from different cultures, and it's a way to experience new things. We hope that our reviews will help you find the best restaurants in Melbourne, and we hope that you'll join us on our journey of culinary exploration.
+      </p>
+    </div>
+    
+    <form action="/search" method="get">
+      <input type="text" name="query" placeholder="Search for a restaurant">
+      <button type="submit">Search</button>
+    </form>
+    
+    <ul class="restaurant-list">
+      <li class="restaurant-item">
+        <a href="/restaurant/1">
+          <span class="restaurant-name">Al Nawab</span>
+          <p class="restaurant-review">This restaurant has excellent food and great service.</p>
+        </a>
+      </li>
+      
+      <li class="restaurant-item">
+        <a href="/restaurant/2">
+          <span class="restaurant-name">Desi Dhaba</span>
+          <p class="restaurant-review">The atmosphere in this restaurant is cozy, and the staff is friendly.</p>
+        </a>
+      </li>
+      
+      <li class="restaurant-item">
+        <a href="/restaurant/3">
+          <span class="restaurant-name">Zyika</span>
+          <p class="restaurant-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+      <li class="restaurant-item">
+        <a href="/restaurant/1">
+          <span class="restaurant-name">Al Nawab</span>
+          <p class="restaurant-review">This restaurant has excellent food and great service.</p>
+        </a>
+      </li>
+      
+      <li class="restaurant-item">
+        <a href="/restaurant/2">
+          <span class="restaurant-name">Desi Dhaba</span>
+          <p class="restaurant-review">The atmosphere in this restaurant is cozy, and the staff is friendly.</p>
+        </a>
+      </li>
+      
+      <li class="restaurant-item">
+        <a href="/restaurant/3">
+          <span class="restaurant-name">Zyika</span>
+          <p class="restaurant-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+      
+
+      <!-- Add more restaurant items as needed -->
+    </ul>
+  </div>
+</body>
+</html>
